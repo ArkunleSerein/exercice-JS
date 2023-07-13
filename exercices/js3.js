@@ -448,10 +448,104 @@ console.log(fruits2); // Affiche [1, 2, 3, 4, 5, 6]
 
 //_____________________________________________________________________________\\
 
-/*   Utiliser la déstructuration pour extraire des valeurs des objets : */
+/*   123 Utiliser la déstructuration pour extraire des valeurs des objets : */
 
 /* 
 La déstructuration est une syntaxe qui permet d'extraire des valeurs d'objets
 ou d'arrays et de les assigner à des variables distinctes. Cela facilite l'accès aux
 propriétés des objets et aux éléments des tableaux.
 */
+const student = {
+    name3: "Julien",
+    age: 30,
+    grade1: 2,
+    };
+    const { name3, age, grade1 } = student;
+    console.log(name3); // Affiche "Julien"
+    console.log(age); // Affiche 30
+    console.log(grade1); // Affiche 2
+
+/*  124  Utiliser la déstructuration pour assigner des variables à partir
+ d'objets imbriqués : */
+
+/* 
+La déstructuration permet également d'extraire des valeurs à partir d'objets
+imbriqués, c'est-à-dire des objets qui contiennent d'autres objets en tant que
+propriétés.  
+*/
+
+// Déclarez un objet book avec les propriétés title et author, où author est un
+// objet contenant les propriétés firstName et lastName. Utilisez la déstructuration pour
+// extraire les valeurs title, firstName et lastName dans des variables distinctes. Affichez
+// les variables dans la console.
+
+const book3 = {
+    title1: "John Doe",
+    author1: {
+        firstName: "bob",
+        lastName: "dealan",
+    }, 
+};
+    const { title1, author1: { firstName, lastName } } = book3;
+    console.log(title1); // Affiche "John Doe"
+    console.log(firstName); // Affiche bob
+    console.log(lastName); // Affiche dealan
+
+/*    125. Utiliser la déstructuration pour assigner des variables à partir de
+tableaux : */
+
+/* 
+La déstructuration permet également d'extraire des valeurs à partir de
+tableaux, en utilisant la syntaxe des crochets ([]).
+*/
+
+// Déclarez un tableau colors contenant trois couleurs. Utilisez la
+// déstructuration pour extraire les valeurs des deuxième et troisième éléments du
+// tableau dans des variables distinctes. Affichez les variables dans la console.
+
+const colors = ["bleu", "blanc", "rouge"];
+const [secondColor, thirdColor] = colors;
+
+console.log(secondColor); // Affiche 2
+console.log(thirdColor); // Affiche 3
+
+/* 126. Déstructuration via les éléments rest : */
+
+/* 
+La déstructuration via les éléments rest permet d'extraire une partie d'un
+tableau dans une nouvelle variable, tout en assignant le reste des éléments à une
+autre variable.
+*/
+
+// Déclarez un tableau grades contenant cinq notes. Utilisez la déstructuration
+// via les éléments rest pour extraire la première note dans une variable firstGrade, et
+// assignez le reste des notes à une variable otherGrades. Affichez firstGrade et
+// otherGrades dans la console.
+
+const grades = [12, 16, 2, 9, 18];
+const [firstGrade1, ...otherGrades] = grades;
+console.log(firstGrade1); // Affiche 12
+console.log(otherGrades); // Affiche [ 16, 2, 9, 18 ]
+
+/*   127. Utiliser la déstructuration pour passer un objet en tant que
+paramètres de fonction : */
+
+/* 
+La déstructuration peut être utilisée pour passer un objet en tant que
+paramètres de fonction, permettant ainsi de spécifier uniquement les propriétés
+nécessaires à utiliser à l'intérieur de la fonction.
+*/
+
+// Déclarez une fonction displayInfo qui accepte un paramètre student
+// représentant un objet contenant les propriétés name et age. Utilisez la déstructuration
+// à l'intérieur de la fonction pour afficher le nom et l'âge de l'étudiant dans la console.
+
+const displayInfo(student) = {
+    name4: "bil",
+    lastName: "Doe",
+    age: 30,
+    };
+    const greet = ({ firstName, lastName }) => {
+    console.log(`Hello, ${firstName} ${lastName}!`);
+    };
+    greet(displayInfo); // Affiche "Hello, John Doe!"
