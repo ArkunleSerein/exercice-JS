@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>heros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Création d'un nouveau héro</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="ajoutinformation.html">Ajout d'information</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="block">
+        <label for="nom">
+            <h3>HERO</h3>
+        </label>
+        <div>
+            <input type="text" id="nom">
+            <label for="nom">Ajouter un nom</label>
+        </div>
+        <div>
+            <input type="text" id="vie">
+            <label for="vie">Ajouter une caractéristique de vie</label>
+        </div>
+        <div>
+            <input type="text" id="attaque">
+            <label for="attaque">Ajouter une caractéristique d'attaque</label>
+        </div>
+        <div>
+            <input type="text" id="defense">
+            <label for="defense">Ajouter une caractéristique de défense</label>
+        </div>
+        <div>
+            <input type="text" id="niveau">
+            <label for="niveau">Ajouter un niveau</label>
+        </div>
+        <div>
+            <label for="team">Ajouter à une équipe:</label>
+            <select id="team">
+                <option value="">Aucune</option>
+                <option value="Osmose">Osmose</option>
+                <option value="Noob">Noob</option>
+                <option value="Firstkill3r">Firstkill3r</option>
+            </select>
+        </div>
+        <button onclick="ajouterInfo()">Valider</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

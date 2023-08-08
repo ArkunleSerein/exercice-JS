@@ -1,0 +1,68 @@
+body {
+  color: white;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  background: linear-gradient(245.59deg, rgba(77, 149, 89, 1) 0%, rgba(56, 112, 61, 1) 28.53%, rgba(19, 57, 23, 1) 75.52%);
+  
+}
+
+h1 {
+  font-size: 2vw;
+  font-family: 'Permanent Marker', cursive;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1vw;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+header a {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+
+}
+
+nav ul li {
+  margin-right: 60px;
+  color: rgba(255, 255, 255, 0) ;
+}
+
+nav ul li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+input, select {
+  border-radius: 25px;
+}
+button {
+  background-color: rgb(36, 105, 43);
+  color: rgb(255, 255, 255);
+  border-width: 1px;
+  border-radius: 25px;
+  padding: 1vw 1vw;
+  margin-right: 2vw;
+  font-size: 1vw;
+  text-align: center;
+}
+
+
+
+#infos {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+
+
+}
